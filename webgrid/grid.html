@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Grid</title>
+    <link rel="stylesheet" href="gridstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-main">
+                <a href="#" class="brand-logo">
+                    <div class="logo-icon">
+                        <img src="../Assets/logo-symbol.png" alt="Brand Logo">
+                    </div>
+                    <h1 class="brand-name">Brand</h1>
+                </a>
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <div class="category-select">
+                        <select>
+                            <option>All category</option>
+                            <option>Electronics</option>
+                            <option>Clothing</option>
+                            <option>Home & Garden</option>
+                        </select>
+                    </div>
+                    <button class="search-btn">Search</button>
+                </div>
+                <div class="header-actions">
+                    <a href="#" class="icon-link" title="Profile">
+                        <i class="fas fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                    <a href="#" class="icon-link" title="Message">
+                        <i class="far fa-comment-alt"></i>
+                        <span>Message</span>
+                    </a>
+                    <a href="#" class="icon-link" title="Orders">
+                        <i class="far fa-heart"></i>
+                        <span>Orders</span>
+                    </a>
+                    <a href="#" class="icon-link" title="My cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>My cart</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-left">
+                <button class="category-btn"><i class="fas fa-bars"></i> All category</button>
+                <a href="#" class="nav-link">Hot offers</a>
+                <a href="#" class="nav-link">Gift boxes</a>
+                <a href="#" class="nav-link">Projects</a>
+                <a href="#" class="nav-link">Menu item</a>
+                <a href="#" class="nav-link dropdown">Help</a>
+            </div>
+            <div class="nav-right">
+                <div class="language-select">
+                    English, USD <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="ship-to">
+                    Ship to <img src="https://flagcdn.com/w20/de.png" alt="Germany Flag"> <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb container">
+        <a href="#">Home</a> &gt;
+        <a href="#">Clothings</a> &gt;
+        <a href="#">Men's wear</a> &gt;
+        <span>Summer clothing</span>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="product-listing">
+            <!-- Sidebar Filters -->
+            <aside class="filters">
+                <!-- Category Filter -->
+                <div class="filter-section">
+                    <div class="filter-header">
+                        <h3>Category</h3>
+                        <button class="toggle-btn"><i class="fas fa-chevron-up"></i></button>
+                    </div>
+                    <div class="filter-content">
+                        <ul class="filter-list">
+                            <li><a href="#" class="active">Mobile accessory</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Smartphones</a></li>
+                            <li><a href="#">Modern tech</a></li>
+                        </ul>
+                        <a href="#" class="see-all">See all</a>
+                    </div>
+                </div>
+
+                <!-- Brands Filter -->
+                <div class="filter-section">
+                    <div class="filter-header">
+                        <h3>Brands</h3>
+                        <button class="toggle-btn"><i class="fas fa-chevron-up"></i></button>
+                    </div>
+                    <div class="filter-content">
+                        <ul class="filter-list checkbox-list">
+                            <li>
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span>Samsung</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span>Apple</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Huawei</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span>Pocco</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Lenovo</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <a href="#" class="see-all">See all</a>
+                    </div>
+                </div>
+
+                <!-- Features Filter -->
+                <div class="filter-section">
+                    <div class="filter-header">
+                        <h3>Features</h3>
+                        <button class="toggle-btn"><i class="fas fa-chevron-up"></i></button>
+                    </div>
+                    <div class="filter-content">
+                        <ul class="filter-list checkbox-list">
+                            <li>
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span>Metallic</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Plastic cover</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>8GB Ram</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Super power</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Large Memory</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <a href="#" class="see-all">See all</a>
+                    </div>
+                </div>
+
+                <!-- Price Range Filter -->
+                <div class="filter-section">
+                    <div class="filter-header">
+                        <h3>Price range</h3>
+                        <button class="toggle-btn"><i class="fas fa-chevron-up"></i></button>
+                    </div>
+                    <div class="filter-content">
+                        <!-- Price range content -->
+                    </div>
+                </div>
+
+                <!-- Condition Filter -->
+                <div class="filter-section">
+                    <div class="filter-header">
+                        <h3>Condition</h3>
+                        <button class="toggle-btn"><i class="fas fa-chevron-up"></i></button>
+                    </div>
+                    <div class="filter-content">
+                        <!-- Condition content -->
+                    </div>
+                </div>
+
+                <!-- Ratings Filter -->
+                <div class="filter-section">
+                    <div class="filter-header">
+                        <h3>Ratings</h3>
+                        <button class="toggle-btn"><i class="fas fa-chevron-up"></i></button>
+                    </div>
+                    <div class="filter-content">
+                        <!-- Ratings content -->
+                    </div>
+                </div>
+
+                <!-- Manufacturer Filter -->
+                <div class="filter-section">
+                    <div class="filter-header">
+                        <h3>Manufacturer</h3>
+                        <button class="toggle-btn"><i class="fas fa-chevron-up"></i></button>
+                    </div>
+                    <div class="filter-content">
+                        <!-- Manufacturer content -->
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Product Content -->
+            <div class="product-content">
+                <div class="product-header">
+                    <div class="product-count">
+                        <span>12,911 items in</span> <strong>Mobile accessory</strong>
+                    </div>
+                    <div class="product-actions">
+                        <label class="verified-only">
+                            <input type="checkbox">
+                            <span>Verified only</span>
+                        </label>
+                        <div class="featured-dropdown">
+                            <button>Featured <i class="fas fa-chevron-down"></i></button>
+                        </div>
+                            <div class="view-options">
+                                <button class="grid-view active" onclick="showGridView()"><i class="fas fa-th"></i></button>
+                                <button class="list-view" onclick="showListView()"><i class="fas fa-list"></i></button>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- Active Filters -->
+                <div class="active-filters">
+                    <div class="filter-tag">
+                        Samsung <button class="remove-filter"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="filter-tag">
+                        Apple <button class="remove-filter"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="filter-tag">
+                        Poco <button class="remove-filter"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="filter-tag">
+                        Metallic <button class="remove-filter"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="filter-tag">
+                        4 star <button class="remove-filter"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="filter-tag">
+                        3 star <button class="remove-filter"><i class="fas fa-times"></i></button>
+                    </div>
+                    <button class="clear-filters">Clear all filter</button>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="product-grid" id="gridView">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/tech/iphone-red.png" alt="iphone-red">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="current-price">$99.50</span>
+                                <span class="original-price">$128.00</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">7.5</span>
+                            </div>
+                            <h3 class="product-title">iPhone 13 (128GB) - Red</h3>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/tech/iphone-gray.jpg" alt="iphone-gray">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="current-price">$99.50</span>
+                                <span class="original-price">$128.00</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">5.9</span>
+                            </div>
+                            <h3 class="product-title">iPhone 13 (128GB) - Gray</h3>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/tech/gopro-camera.png" alt="gopro-camera">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="current-price">$99.50</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">7.5</span>
+                            </div>
+                            <h3 class="product-title">GoPro HERO6 4K Action Camera - Black</h3>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/tech/Tablets.png" alt="Tablets">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="current-price">$99.50</span>
+                                <span class="original-price">$128.00</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">7.5</span>
+                            </div>
+                            <h3 class="product-title">Tablets - Black</h3>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/tech/canon camera.jpg" alt="Canon Camera">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="current-price">$99.50</span>
+                                <span class="original-price">$128.00</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">7.5</span>
+                            </div>
+                            <h3 class="product-title">Canon Camera 4K Action Camera - Black</h3>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/tech/laptop.jpg" alt="Laptop">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="current-price">$99.50</span>
+                                <span class="original-price">$128.00</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">7.5</span>
+                            </div>
+                            <h3 class="product-title">Laptop i13 16GB 512SSD Nvidia Graphic Card - Black</h3>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/tech/smart-watch.png" alt="Smart Watch">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="current-price">$99.50</span>
+                                <span class="original-price">$128.00</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">7.5</span>
+                            </div>
+                            <h3 class="product-title">Smart Watch - white</h3>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/tech/gaming headphhones.png" alt="Gaming Headphones">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="current-price">$99.50</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">7.5</span>
+                            </div>
+                            <h3 class="product-title">Gaming Headphones With Mic - Black</h3>
+                        </div>
+                    </div>
+                    <!-- Product 8 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/tech/white headphones.png" alt="white Headphones">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="current-price">$99.50</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">7.5</span>
+                            </div>
+                            <h3 class="product-title">Musical Headphones - White</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product List View -->
+                <div class="product-list" id="listView">
+                    <!-- Product 1 -->
+                    <div class="product-list-item">
+                        <div class="product-list-image">
+                            <img src="../Assets/tech/iphone-red.png" alt="iphone-red">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-list-info">
+                            <h3 class="product-list-title">iPhone 13 (128GB) - Red</h3>
+                            <div class="product-list-price">
+                                <span class="current-price">$99.50</span>
+                                <span class="original-price">$128.00</span>
+                            </div>
+                            <div class="product-list-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">7.5 (128 reviews)</span>
+                            </div>
+                            <div class="product-list-shipping">FREE Shipping</div>
+                            <div class="product-list-description">
+                                The iPhone 13 features a stunning Super Retina XDR display, A15 Bionic chip, and advanced dual-camera system. With 128GB storage in vibrant red.
+                            </div>
+                            <div class="product-list-orders">500+ orders in last 24 hours</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-list-item">
+                        <div class="product-list-image">
+                            <img src="../Assets/tech/iphone-gray.jpg" alt="iphone-gray">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-list-info">
+                            <h3 class="product-list-title">iPhone 13 (128GB) - Gray</h3>
+                            <div class="product-list-price">
+                                <span class="current-price">$99.50</span>
+                                <span class="original-price">$128.00</span>
+                            </div>
+                            <div class="product-list-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">5.9 (89 reviews)</span>
+                            </div>
+                            <div class="product-list-shipping">FREE Shipping</div>
+                            <div class="product-list-description">
+                                Sleek gray iPhone 13 with 128GB storage. Features advanced camera system, all-day battery life, and durable Ceramic Shield front cover.
+                            </div>
+                            <div class="product-list-orders">320 orders in last 24 hours</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-list-item">
+                        <div class="product-list-image">
+                            <img src="../Assets/tech/gopro-camera.png" alt="gopro-camera">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-list-info">
+                            <h3 class="product-list-title">GoPro HERO6 4K Action Camera - Black</h3>
+                            <div class="product-list-price">
+                                <span class="current-price">$99.50</span>
+                            </div>
+                            <div class="product-list-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">7.5 (256 reviews)</span>
+                            </div>
+                            <div class="product-list-shipping">FREE Shipping</div>
+                            <div class="product-list-description">
+                                Capture your adventures in stunning 4K with the GoPro HERO6. Waterproof, voice control, and advanced image stabilization make it perfect for action shots.
+                            </div>
+                            <div class="product-list-orders">750+ orders in last 24 hours</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-list-item">
+                        <div class="product-list-image">
+                            <img src="../Assets/tech/Tablets.png" alt="Tablets">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-list-info">
+                            <h3 class="product-list-title">Tablets - Black</h3>
+                            <div class="product-list-price">
+                                <span class="current-price">$99.50</span>
+                                <span class="original-price">$128.00</span>
+                            </div>
+                            <div class="product-list-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">7.5 (42 reviews)</span>
+                            </div>
+                            <div class="product-list-shipping">FREE Shipping</div>
+                            <div class="product-list-description">
+                                High-performance black tablet with crisp display, long battery life, and powerful processor. Perfect for work and entertainment on the go.
+                            </div>
+                            <div class="product-list-orders">210 orders in last 24 hours</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-list-item">
+                        <div class="product-list-image">
+                            <img src="../Assets/tech/canon camera.jpg" alt="Canon Camera">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-list-info">
+                            <h3 class="product-list-title">Canon Camera 4K Action Camera - Black</h3>
+                            <div class="product-list-price">
+                                <span class="current-price">$99.50</span>
+                                <span class="original-price">$128.00</span>
+                            </div>
+                            <div class="product-list-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">7.5 (156 reviews)</span>
+                            </div>
+                            <div class="product-list-shipping">FREE Shipping</div>
+                            <div class="product-list-description">
+                                Professional-grade Canon camera capable of shooting in 4K resolution. Features advanced autofocus, image stabilization, and weather sealing.
+                            </div>
+                            <div class="product-list-orders">430 orders in last 24 hours</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-list-item">
+                        <div class="product-list-image">
+                            <img src="../Assets/tech/laptop.jpg" alt="Laptop">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-list-info">
+                            <h3 class="product-list-title">Laptop i13 16GB 512SSD Nvidia Graphic Card - Black</h3>
+                            <div class="product-list-price">
+                                <span class="current-price">$99.50</span>
+                                <span class="original-price">$128.00</span>
+                            </div>
+                            <div class="product-list-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">7.5 (89 reviews)</span>
+                            </div>
+                            <div class="product-list-shipping">FREE Shipping</div>
+                            <div class="product-list-description">
+                                Powerful laptop with Intel i13 processor, 16GB RAM, 512GB SSD, and dedicated Nvidia graphics. Perfect for work, gaming, and creative tasks.
+                            </div>
+                            <div class="product-list-orders">380 orders in last 24 hours</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-list-item">
+                        <div class="product-list-image">
+                            <img src="../Assets/tech/smart-watch.png" alt="Smart Watch">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-list-info">
+                            <h3 class="product-list-title">Smart Watch - white</h3>
+                            <div class="product-list-price">
+                                <span class="current-price">$99.50</span>
+                                <span class="original-price">$128.00</span>
+                            </div>
+                            <div class="product-list-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">7.5 (112 reviews)</span>
+                            </div>
+                            <div class="product-list-shipping">FREE Shipping</div>
+                            <div class="product-list-description">
+                                Stylish white smartwatch with fitness tracking, heart rate monitoring, and smartphone notifications. Water-resistant with long battery life.
+                            </div>
+                            <div class="product-list-orders">290 orders in last 24 hours</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-list-item">
+                        <div class="product-list-image">
+                            <img src="../Assets/tech/gaming headphhones.png" alt="Gaming Headphones">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-list-info">
+                            <h3 class="product-list-title">Gaming Headphones With Mic - Black</h3>
+                            <div class="product-list-price">
+                                <span class="current-price">$99.50</span>
+                            </div>
+                            <div class="product-list-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">7.5 (178 reviews)</span>
+                            </div>
+                            <div class="product-list-shipping">FREE Shipping</div>
+                            <div class="product-list-description">
+                                Premium gaming headphones with crystal-clear sound, noise-canceling microphone, and comfortable over-ear design. Perfect for long gaming sessions.
+                            </div>
+                            <div class="product-list-orders">520+ orders in last 24 hours</div>
+                        </div>
+                    </div>
+                    <!-- Product 9 -->
+                    <div class="product-list-item">
+                        <div class="product-list-image">
+                            <img src="../Assets/tech/white headphones.png" alt="White Headphones">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-list-info">
+                            <h3 class="product-list-title">Musical Headphones - White</h3>
+                            <div class="product-list-price">
+                                <span class="current-price">$99.50</span>
+                            </div>
+                            <div class="product-list-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">7.5 (178 reviews)</span>
+                            </div>
+                            <div class="product-list-shipping">FREE Shipping</div>
+                            <div class="product-list-description">
+                                Musical headphones with crystal-clear sound, noise-canceling, and comfortable over-ear design. Perfect for long term playlists.
+                            </div>
+                            <div class="product-list-orders">840+ orders in last 24 hours</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <div class="per-page">
+                        <span>Show</span>
+                        <select>
+                            <option>10</option>
+                            <option>20</option>
+                            <option>50</option>
+                        </select>
+                    </div>
+                    <div class="page-controls">
+                        <button class="prev-page"><i class="fas fa-chevron-left"></i></button>
+                        <button class="page-number active">1</button>
+                        <button class="page-number">2</button>
+                        <button class="page-number">3</button>
+                        <button class="next-page"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe on our newsletter</h2>
+            <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+            <div class="newsletter-form">
+                <div class="form-group">
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="#"><span class="logo-icon">B</span> Brand</a>
+                    <p>Best information about the company goes here but now lorem ipsum is</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Find store</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Partnership</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Find store</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Money Refund</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>For users</h3>
+                        <ul>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">My Orders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Get app</h3>
+                        <div class="app-buttons">
+                            <a href="#" class="app-btn">
+                                <img src="/placeholder.svg?height=40&width=120" alt="App Store">
+                            </a>
+                            <a href="#" class="app-btn">
+                                <img src="/placeholder.svg?height=40&width=120" alt="Google Play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 Ecommerce.</p>
+                <div class="language-select">
+                    <img src="https://flagcdn.com/w20/us.png" alt="English"> English <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="gridscript.js"></script>
+</body>
+<script>
+    function showGridView() {
+        document.getElementById('gridView').style.display = 'grid';
+        document.getElementById('listView').style.display = 'none';
+        document.querySelector('.grid-view').classList.add('active');
+        document.querySelector('.list-view').classList.remove('active');
+    }
+    
+    function showListView() {
+        document.getElementById('gridView').style.display = 'none';
+        document.getElementById('listView').style.display = 'flex';
+        document.querySelector('.grid-view').classList.remove('active');
+        document.querySelector('.list-view').classList.add('active');
+    }
+    
+    // Initialize with grid view
+    showGridView();
+</script>
+</html>

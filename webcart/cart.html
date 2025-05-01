@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Brand</title>
+    <link rel="stylesheet" href="cartstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-main">
+                <a href="#" class="brand-logo">
+                    <div class="logo-icon">
+                        <img src="../Assets/logo-symbol.png" alt="Brand Logo">
+                    </div>
+                    <h1 class="brand-name">Brand</h1>
+                </a>
+                <div class="header-actions">
+                    <a href="#" class="icon-link" title="Profile">
+                        <i class="fas fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                    <a href="#" class="icon-link" title="Message">
+                        <i class="far fa-comment-alt"></i>
+                        <span>Message</span>
+                    </a>
+                    <a href="#" class="icon-link" title="Orders">
+                        <i class="far fa-heart"></i>
+                        <span>Orders</span>
+                    </a>
+                    <a href="#" class="icon-link active" title="My cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>My cart</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h1 class="cart-title">My cart (3)</h1>
+
+        <div class="cart-layout">
+            <!-- Cart Items -->
+            <div class="cart-items">
+                <!-- Cart Item 1 -->
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="../Assets/cloth/1.jpg" alt="T-shirt">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-title">T-shirts with multiple colors, for men and lady</h3>
+                        <div class="item-specs">
+                            <span>Size: medium,</span>
+                            <span>Color: blue,</span>
+                            <span>Material: Plastic</span>
+                        </div>
+                        <div class="item-seller">Seller: Artel Market</div>
+                        <div class="item-actions">
+                            <button class="remove-btn">Remove</button>
+                            <button class="save-btn">Save for later</button>
+                        </div>
+                    </div>
+                    <div class="item-price">$78.99</div>
+                    <div class="item-quantity">
+                        <div class="quantity-selector">
+                            <span>Qty: 9</span>
+                            <i class="fas fa-chevron-down"></i>
+                            <div class="quantity-dropdown">
+                                <div class="quantity-option" data-value="1">1</div>
+                                <div class="quantity-option" data-value="2">2</div>
+                                <div class="quantity-option" data-value="3">3</div>
+                                <div class="quantity-option" data-value="4">4</div>
+                                <div class="quantity-option" data-value="5">5</div>
+                                <div class="quantity-option" data-value="6">6</div>
+                                <div class="quantity-option" data-value="7">7</div>
+                                <div class="quantity-option" data-value="8">8</div>
+                                <div class="quantity-option" data-value="9">9</div>
+                                <div class="quantity-option" data-value="10">10</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Item 2 -->
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="../Assets/cloth/5.jpg" alt="T-shirt">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-title">Jeans Bag, for girls</h3>
+                        <div class="item-specs">
+                            <span>Size: medium,</span>
+                            <span>Color: blue,</span>
+                            <span>Material: Jeans</span>
+                        </div>
+                        <div class="item-seller">Seller: Best factory LLC</div>
+                        <div class="item-actions">
+                            <button class="remove-btn">Remove</button>
+                            <button class="save-btn">Save for later</button>
+                        </div>
+                    </div>
+                    <div class="item-price">$39.00</div>
+                    <div class="item-quantity">
+                        <div class="quantity-selector">
+                            <span>Qty: 3</span>
+                            <i class="fas fa-chevron-down"></i>
+                            <div class="quantity-dropdown">
+                                <div class="quantity-option" data-value="1">1</div>
+                                <div class="quantity-option" data-value="2">2</div>
+                                <div class="quantity-option" data-value="3">3</div>
+                                <div class="quantity-option" data-value="4">4</div>
+                                <div class="quantity-option" data-value="5">5</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Item 3 -->
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="../Assets/cloth/6.jpg" alt="wallet">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-title">Leather Wallet with blue color, for men </h3>
+                        <div class="item-specs">
+                            <span>Size: medium,</span>
+                            <span>Color: blue,</span>
+                            <span>Material: Leather</span>
+                        </div>
+                        <div class="item-seller">Seller: Leather Wallet Company</div>
+                        <div class="item-actions">
+                            <button class="remove-btn">Remove</button>
+                            <button class="save-btn">Save for later</button>
+                        </div>
+                    </div>
+                    <div class="item-price">$170.50</div>
+                    <div class="item-quantity">
+                        <div class="quantity-selector">
+                            <span>Qty: 1</span>
+                            <i class="fas fa-chevron-down"></i>
+                            <div class="quantity-dropdown">
+                                <div class="quantity-option" data-value="1">1</div>
+                                <div class="quantity-option" data-value="2">2</div>
+                                <div class="quantity-option" data-value="3">3</div>
+                                <div class="quantity-option" data-value="4">4</div>
+                                <div class="quantity-option" data-value="5">5</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-actions">
+                    <a href="#" class="back-btn"><i class="fas fa-arrow-left"></i> Back to shop</a>
+                    <button class="remove-all-btn">Remove all</button>
+                </div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <div class="coupon-section">
+                    <h3>Have a coupon?</h3>
+                    <div class="coupon-form">
+                        <input type="text" placeholder="Add coupon">
+                        <button class="apply-btn">Apply</button>
+                    </div>
+                </div>
+
+                <div class="summary-details">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span>$1403.97</span>
+                    </div>
+                    <div class="summary-row discount">
+                        <span>Discount:</span>
+                        <span>- $60.00</span>
+                    </div>
+                    <div class="summary-row tax">
+                        <span>Tax:</span>
+                        <span>+ $14.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span>$1357.97</span>
+                    </div>
+                </div>
+
+                <button class="checkout-btn">Checkout</button>
+
+                <div class="payment-methods">
+                    <img src="../Assets/Payments/American-Express.png" alt="American Express">
+                    <img src="../Assets/Payments/Master-Card.png" alt="Mastercard">
+                    <img src="../Assets/Payments/PayPal.png" alt="PayPal">
+                    <img src="../Assets/Payments/Visa-Card.png" alt="Visa">
+                    <img src="../Assets/Payments/Apple-Pay.png" alt="Apple Pay">
+                </div>
+            </div>
+        </div>
+
+        <!-- Service Features -->
+        <div class="service-features">
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="feature-text">
+                    <h3>Secure payment</h3>
+                    <p>Have you ever finally just</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div class="feature-text">
+                    <h3>Customer support</h3>
+                    <p>Have you ever finally just</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <div class="feature-text">
+                    <h3>Free delivery</h3>
+                    <p>Have you ever finally just</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Saved for Later -->
+        <div class="saved-section">
+            <h2>Saved for later</h2>
+            <div class="saved-items">
+                <!-- Saved Item 1 -->
+                <div class="saved-item">
+                    <div class="saved-image">
+                        <img src="../Assets/tech/Tablets.png" alt="Tablet">
+                    </div>
+                    <div class="saved-price">$99.50</div>
+                    <div class="saved-title">Xiaomi Tablet - Black</div>
+                    <button class="move-to-cart-btn"><i class="fas fa-shopping-cart"></i> Move to cart</button>
+                </div>
+
+                <!-- Saved Item 2 -->
+                <div class="saved-item">
+                    <div class="saved-image">
+                        <img src="../Assets/tech/iphone-gray.jpg" alt="Iphone Gray">
+                    </div>
+                    <div class="saved-price">$99.50</div>
+                    <div class="saved-title">Iphone 13 (128GB) - Gray</div>
+                    <button class="move-to-cart-btn"><i class="fas fa-shopping-cart"></i> Move to cart</button>
+                </div>
+
+                <!-- Saved Item 3 -->
+                <div class="saved-item">
+                    <div class="saved-image">
+                        <img src="../Assets/tech/smart-watch.png" alt="smart watch">
+                    </div>
+                    <div class="saved-price">$99.50</div>
+                    <div class="saved-title">Smart Watch - White</div>
+                    <button class="move-to-cart-btn"><i class="fas fa-shopping-cart"></i> Move to cart</button>
+                </div>
+
+                <!-- Saved Item 4 -->
+                <div class="saved-item">
+                    <div class="saved-image">
+                        <img src="../Assets/tech/laptop.jpg" alt="laptop">
+                    </div>
+                    <div class="saved-price">$99.50</div>
+                    <div class="saved-title">Laptop i13 16GB 512SSD - Silver</div>
+                    <button class="move-to-cart-btn"><i class="fas fa-shopping-cart"></i> Move to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Discount Banner -->
+        <div class="discount-banner">
+            <div class="banner-content">
+                <h2>Super discount on more than 100 USD</h2>
+                <p>Have you ever finally just write dummy info</p>
+            </div>
+            <button class="shop-now-btn">Shop now</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="#"><span class="logo-icon">B</span> Brand</a>
+                    <p>Best information about the company goes here but now lorem ipsum is</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Find store</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Partnership</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Find store</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Money Refund</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>For users</h3>
+                        <ul>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">My Orders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Get app</h3>
+                        <div class="app-buttons">
+                            <a href="#" class="app-btn">
+                                <img src="/placeholder.svg?height=40&width=120" alt="App Store">
+                            </a>
+                            <a href="#" class="app-btn">
+                                <img src="/placeholder.svg?height=40&width=120" alt="Google Play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 Ecommerce.</p>
+                <div class="language-select">
+                    <img src="https://flagcdn.com/w20/us.png" alt="English"> English <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cartscript.js"></script>
+</body>
+</html>
