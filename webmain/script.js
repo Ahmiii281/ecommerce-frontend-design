@@ -1,5 +1,5 @@
 // Mobile Navigation Toggle
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded'), function() {
     // Dropdown functionality
     const dropdowns = document.querySelectorAll('.dropdown');
     
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.toggle('active');
         });
     });
-    
+}
     // Timer countdown
     const timerBoxes = document.querySelectorAll('.timer-box .time');
     if (timerBoxes.length) {
@@ -111,21 +111,78 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Language and currency selector
-    const languageSelect = document.querySelectorAll('.language-select');
-    
-    languageSelect.forEach(select => {
-        select.addEventListener('click', function() {
-            alert('Language selection functionality will be implemented here');
-        });
+ // Language and currency selector
+const languageSelects = document.querySelectorAll('.language-select select');
+
+languageSelects.forEach(select => {
+    select.addEventListener('change', function() {
+        const selectedOption = this.options[this.selectedIndex];
+        console.log(`Selected language/currency: ${selectedOption.text}`);
+        // Here you would typically:
+        // 1. Update the UI to show selected language
+        // 2. Make an API call to change the site language
+        // 3. Possibly reload currency prices
     });
-    
-    // Ship to selector
-    const shipTo = document.querySelector('.ship-to');
-    
-    if (shipTo) {
-        shipTo.addEventListener('click', function() {
-            alert('Shipping country selection functionality will be implemented here');
+});
+
+// Ship to selector
+const shipToSelect = document.querySelector('.ship-to select');
+
+if (shipToSelect) {
+    shipToSelect.addEventListener('change', function() {
+        const selectedOption = this.options[this.selectedIndex];
+        const countryCode = selectedOption.value;
+        const flagImage = selectedOption.dataset.flag;
+        
+        console.log(`Shipping country changed to: ${selectedOption.text}`);
+        
+        // Update the flag display (if you're showing it outside the select)
+        const flagDisplay = document.querySelector('.ship-to img');
+        if (flagDisplay) {
+            flagDisplay.src = `../Assets/flags/${flagImage}`;
+            flagDisplay.alt = `${selectedOption.text} Flag`;
+        }
+        
+        // Here you would typically:
+        // 1. Update shipping calculations
+        // 2. Filter available products based on shipping country
+        // 3. Update any location-specific content
+    });
+}
+
+// Category dropdown toggle
+const categoryBtn = document.querySelector('.category-btn');
+const categoryDropdown = document.querySelector('.category-dropdown');
+
+if (categoryBtn && categoryDropdown) {
+    categoryBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        categoryDropdown.classList.toggle('show');
+    });
+}
+document.addEventListener('DOMContentLoaded', function() {
+    // Help dropdown toggle
+    const helpDropdown = document.querySelector('.dropdown-container');
+    const helpDropdownBtn = document.querySelector('.dropdown-container .dropdown');
+    const helpDropdownContent = document.querySelector('.dropdown-container .dropdown-content');
+
+    if (helpDropdown && helpDropdownBtn && helpDropdownContent) {
+        helpDropdownBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            helpDropdownContent.classList.toggle('show');
+            const icon = this.querySelector('.dropdown-icon');
+            icon.classList.toggle('rotate');
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!helpDropdown.contains(e.target)) {
+                helpDropdownContent.classList.remove('show');
+                const icon = helpDropdown.querySelector('.dropdown-icon');
+                icon.classList.remove('rotate');
+            }
         });
     }
+
 });

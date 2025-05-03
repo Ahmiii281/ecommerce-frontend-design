@@ -12,27 +12,26 @@
     <header>
         <div class="container">
             <div class="header-main">
-                <a href="#" class="brand-logo">
+                <a href="./index.html" class="brand-logo">
                     <div class="logo-icon">
                         <img src="../Assets/logo-symbol.png" alt="Brand Logo">
                     </div>
                     <h1 class="brand-name">Brand</h1>
                 </a>
-            </div>
-            <div class="search-container">
+                <div class="search-container">
                     <input type="text" placeholder="Search">
                     <div class="category-select">
                         <select>
-                            <option>All category</option>
+                            <option class="nav-link dropdown">All category</option>
                             <option>Electronics</option>
-                            <option>Home & Garden</option>
                             <option>Clothing</option>
+                            <option>Home & Garden</option>
                         </select>
                     </div>
                     <button class="search-btn">Search</button>
                 </div>
                 <div class="header-actions">
-                    <a href="#" class="icon-link" title="Profile">
+                    <a href="./index.html" class="icon-link" title="Profile">
                         <i class="fas fa-user"></i>
                         <span>Profile</span>
                     </a>
@@ -44,7 +43,7 @@
                         <i class="far fa-heart"></i>
                         <span>Orders</span>
                     </a>
-                    <a href="#" class="icon-link" title="My cart">
+                    <a href="../webcart/cart.html" class="icon-link" title="My cart">
                         <i class="fas fa-shopping-cart"></i>
                         <span>My cart</span>
                     </a>
@@ -62,14 +61,31 @@
                 <a href="#" class="nav-link">Gift boxes</a>
                 <a href="#" class="nav-link">Projects</a>
                 <a href="#" class="nav-link">Menu item</a>
-                <a href="#" class="nav-link dropdown">Help</i></a>
+                <a href="#" class="nav-link">Help</a>
             </div>
             <div class="nav-right">
                 <div class="language-select">
-                    English, USD <i class="fas fa-chevron-down"></i>
+                    <select>
+                        <option value="en">English, USD</option>
+                        <option value="es">Spanish, EUR</option>
+                        <option value="fr">French, EUR</option>
+                        <option value="de">German, EUR</option>
+                        <option value="zh">Chinese, CNY</option>
+                        <option value="ja">Japanese, JPY</option>
+                    </select>
+                    <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="ship-to">
-                    Ship to <img src="../Assets/flags/germany.png" alt="Germany Flag" width="20px"> <i class="fas fa-chevron-down"></i>
+                    <select>
+                        <option value="de" data-flag="germany.png">Ship to Germany</option>
+                        <option value="us" data-flag="usa.png">Ship to USA</option>
+                        <option value="uk" data-flag="uk.png">Ship to UK</option>
+                        <option value="fr" data-flag="france.png">Ship to France</option>
+                        <option value="ca" data-flag="canada.png">Ship to Canada</option>
+                        <option value="au" data-flag="australia.png">Ship to Australia</option>
+                        <option value="jp" data-flag="japan.png">Ship to Japan</option>
+                    </select>
+                    <i class="fas fa-chevron-down"></i>
                 </div>
             </div>
         </div>
@@ -102,8 +118,11 @@
                 <div class="user-card">
                     <div class="userlogin">
                         <div class="user-greeting">
-                            <h3>Hi, user</h3>
-                            <p>let's get started</p>
+                            <img src="../Assets/Avatar.jpg" alt="avatar">
+                            <div class="user">
+                                <h3>Hi, user</h3>
+                                <p>let's get started</p>
+                            </div>
                         </div>
                         <div class="user-actions">
                             <button class="btn-primary">Join now</button>
@@ -391,6 +410,10 @@
                                             <option>Kg</option>
                                             <option>Boxes</option>
                                             <option>Pallets</option>
+                                            <option>Liters</option>
+                                            <option>Meters</option>
+                                            <option>Pairs</option>
+                                            <option>Sets</option>
                                         </select>
                                     </div>
                                 </div>
@@ -662,8 +685,11 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-logo">
-                    <a href="#">
-                        <img src="logo.png" alt="Brand Logo" class="footer-logo-img">
+                    <a href="./index.html" class="brand-logo">
+                        <div class="logo-icon">
+                            <img src="../Assets/logo-symbol.png" alt="Brand Logo">
+                        </div>
+                        <h1 class="brand-name">Brand</h1>
                     </a>
                     <p>Best information about the company goes here but now lorem ipsum is</p>
                     <div class="social-icons">
@@ -718,7 +744,7 @@
                                 <img src="../Assets/apple store.png" alt="App Store">
                             </a>
                             <a href="#" class="app-btn">
-                                <img src="../Assets/google play store.png" alt="Google Play">
+                                <img src="../Assets/Logo.png" alt="Google Play">
                             </a>
                         </div>
                     </div>
@@ -727,7 +753,20 @@
             <div class="footer-bottom">
                 <p>© 2025 Ecommerce.</p>
                 <div class="language-select">
-                    <img src="https://flagcdn.com/w20/us.png" alt="English"> English <i class="fas fa-chevron-down"></i>
+                    <select name="language" id="footer-languages">
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="zh">Chinese</option>
+                        <option value="ar">Arabic</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="ru">Russian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ko">Korean</option>
+                        <option value="hi">Hindi</option>
+                    </select>
+                    <i class="fas fa-chevron-down"></i>
                 </div>
             </div>
         </div>

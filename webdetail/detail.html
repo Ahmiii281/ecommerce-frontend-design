@@ -12,7 +12,7 @@
     <header>
         <div class="container">
             <div class="header-main">
-                <a href="#" class="brand-logo">
+                <a href="./index.html" class="brand-logo">
                     <div class="logo-icon">
                         <img src="../Assets/logo-symbol.png" alt="Brand Logo">
                     </div>
@@ -22,7 +22,7 @@
                     <input type="text" placeholder="Search">
                     <div class="category-select">
                         <select>
-                            <option>All category</option>
+                            <option class="nav-link dropdown">All category</option>
                             <option>Electronics</option>
                             <option>Clothing</option>
                             <option>Home & Garden</option>
@@ -31,7 +31,7 @@
                     <button class="search-btn">Search</button>
                 </div>
                 <div class="header-actions">
-                    <a href="#" class="icon-link" title="Profile">
+                    <a href="./index.html" class="icon-link" title="Profile">
                         <i class="fas fa-user"></i>
                         <span>Profile</span>
                     </a>
@@ -43,7 +43,7 @@
                         <i class="far fa-heart"></i>
                         <span>Orders</span>
                     </a>
-                    <a href="#" class="icon-link" title="My cart">
+                    <a href="../webcart/cart.html" class="icon-link" title="My cart">
                         <i class="fas fa-shopping-cart"></i>
                         <span>My cart</span>
                     </a>
@@ -61,14 +61,31 @@
                 <a href="#" class="nav-link">Gift boxes</a>
                 <a href="#" class="nav-link">Projects</a>
                 <a href="#" class="nav-link">Menu item</a>
-                <a href="#" class="nav-link dropdown">Help</a>
+                <a href="#" class="nav-link">Help</a>
             </div>
             <div class="nav-right">
                 <div class="language-select">
-                    English, USD <i class="fas fa-chevron-down"></i>
+                    <select>
+                        <option value="en">English, USD</option>
+                        <option value="es">Spanish, EUR</option>
+                        <option value="fr">French, EUR</option>
+                        <option value="de">German, EUR</option>
+                        <option value="zh">Chinese, CNY</option>
+                        <option value="ja">Japanese, JPY</option>
+                    </select>
+                    <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="ship-to">
-                    Ship to <img src="https://flagcdn.com/w20/de.png" alt="Germany Flag"> <i class="fas fa-chevron-down"></i>
+                    <select>
+                        <option value="de" data-flag="germany.png">Ship to Germany</option>
+                        <option value="us" data-flag="usa.png">Ship to USA</option>
+                        <option value="uk" data-flag="uk.png">Ship to UK</option>
+                        <option value="fr" data-flag="france.png">Ship to France</option>
+                        <option value="ca" data-flag="canada.png">Ship to Canada</option>
+                        <option value="au" data-flag="australia.png">Ship to Australia</option>
+                        <option value="jp" data-flag="japan.png">Ship to Japan</option>
+                    </select>
+                    <i class="fas fa-chevron-down"></i>
                 </div>
             </div>
         </div>
@@ -516,7 +533,12 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-logo">
-                    <a href="#"><span class="logo-icon">B</span> Brand</a>
+                    <a href="./index.html" class="brand-logo">
+                        <div class="logo-icon">
+                            <img src="../Assets/logo-symbol.png" alt="Brand Logo">
+                        </div>
+                        <h1 class="brand-name">Brand</h1>
+                    </a>
                     <p>Best information about the company goes here but now lorem ipsum is</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -567,19 +589,32 @@
                         <h3>Get app</h3>
                         <div class="app-buttons">
                             <a href="#" class="app-btn">
-                                <img src="/placeholder.svg?height=40&width=120" alt="App Store">
+                                <img src="../Assets/apple store.png" alt="App Store">
                             </a>
                             <a href="#" class="app-btn">
-                                <img src="/placeholder.svg?height=40&width=120" alt="Google Play">
+                                <img src="../Assets/Logo.png" alt="Google Play">
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2023 Ecommerce.</p>
+                <p>© 2025 Ecommerce.</p>
                 <div class="language-select">
-                    <img src="https://flagcdn.com/w20/us.png" alt="English"> English <i class="fas fa-chevron-down"></i>
+                    <select name="language" id="footer-languages">
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="zh">Chinese</option>
+                        <option value="ar">Arabic</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="ru">Russian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ko">Korean</option>
+                        <option value="hi">Hindi</option>
+                    </select>
+                    <i class="fas fa-chevron-down"></i>
                 </div>
             </div>
         </div>
